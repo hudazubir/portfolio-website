@@ -21,10 +21,13 @@
         <!-- Text side -->
         <div>
           <p class="text-gray-500 leading-relaxed mb-8">
-            I'm a front-end developer in progress, learning to build clean and
+            I'm a software developer who's chosen to focus on front-end — building clean, 
+            responsive interfaces that actually feel good to use. Right now I'm diving deeper into the 
+            front-end world, especially exploring how AI can make the development process faster and smarter.
+            <!-- I'm a front-end developer in progress, learning to build clean and
             functional websites using Vue.js. I enjoy turning ideas into
             interactive user interfaces, and I'm always exploring new tools to
-            build faster and smarter — including AI-assisted development.
+            build faster and smarter — including AI-assisted development. -->
           </p>
   
           <div class="flex flex-wrap gap-2">
