@@ -7,7 +7,7 @@
           NH
         </span>
         <h1 class="text-base font-semibold text-gray-900 tracking-tight">
-          Nur Huda
+          wiuzzmie
         </h1>
       </a>
 

@@ -6,22 +6,15 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-white rounded-2xl p-6 text-left border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
-          <div class="text-3xl mb-4">🖥️</div>
-          <h3 class="font-semibold text-gray-900 mb-2">Project One</h3>
-          <p class="text-sm text-gray-500 mb-4">Short description about this project goes here.</p>
-          <a href="#" class="text-sm font-medium text-gray-900 hover:text-emerald-600">View Project →</a>
+          <div class="text-3xl mb-4">💬</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Quote Generator</h3>
+          <p class="text-sm text-gray-500 mb-4">A quote generator with category filters, favorites, and quote submission — built with Vue.js and Tailwind CSS.</p>
+          <a href="https://quote-generator-rouge-xi.vercel.app" target="_blank" class="text-sm font-medium text-gray-900 hover:text-emerald-600">View Project →</a>
         </div>
 
         <div class="bg-white rounded-2xl p-6 text-left border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
           <div class="text-3xl mb-4">📱</div>
           <h3 class="font-semibold text-gray-900 mb-2">Project Two</h3>
-          <p class="text-sm text-gray-500 mb-4">Short description about this project goes here.</p>
-          <a href="#" class="text-sm font-medium text-gray-900 hover:text-emerald-600">View Project →</a>
-        </div>
-
-        <div class="bg-white rounded-2xl p-6 text-left border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
-          <div class="text-3xl mb-4">🎨</div>
-          <h3 class="font-semibold text-gray-900 mb-2">Project Three</h3>
           <p class="text-sm text-gray-500 mb-4">Short description about this project goes here.</p>
           <a href="#" class="text-sm font-medium text-gray-900 hover:text-emerald-600">View Project →</a>
         </div>
