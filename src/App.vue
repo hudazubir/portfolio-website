@@ -9,10 +9,21 @@
 </template> -->
 <template>
   <Navbar />
-  <Hero />
+  <!-- <Hero />
   <About />
   <Projects />
-  <Contact />
+  <Contact /> -->
+  <!-- Hero - Putih -->
+<Hero class="bg-white" />
+
+<!-- About - Slight blue tint -->
+<About class="bg-white" />
+
+<!-- Projects - Slight purple tint -->
+<Projects class="bg-purple-50" />
+
+<!-- Contact - Slight gray -->
+<Contact class="bg-slate-50" />
 </template>
 
 <script setup>

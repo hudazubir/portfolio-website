@@ -58,7 +58,7 @@
   </nav>
 </template>
 
-<script setup>
+<!-- <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isOpen = ref(false)
@@ -85,6 +85,49 @@ onMounted(() => {
       })
     },
     { rootMargin: '-40% 0px -40% 0px' }
+  )
+
+  sections.forEach((section) => {
+    if (section) observer.observe(section)
+  })
+})
+
+onUnmounted(() => {
+  if (observer) observer.disconnect()
+})
+</script> -->
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isOpen = ref(false)
+const activeSection = ref('home')
+
+const links = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' },
+]
+
+let observer
+
+onMounted(() => {
+  const sections = links.map(link => document.getElementById(link.id))
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activeSection.value = entry.target.id
+        }
+      })
+    },
+    { 
+      rootMargin: '-50% 0px -50% 0px'  // Changed from -40% to -50%
+      // OR try this kalau still tak jalan:
+      // rootMargin: '0px'
+    }
   )
 
   sections.forEach((section) => {
