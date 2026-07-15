@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    @apply bg-white dark:bg-gray-900 transition-colors duration-300;
+  }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
