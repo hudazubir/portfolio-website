@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- <link rel="icon" href="/favicon.ico"> -->
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Nurhuda Zubir | Front-end Developer</title>
+    <meta name="description" content="Portfolio of Nurhuda Zubir, a front-end developer building clean, responsive web interfaces with Vue.js and Tailwind CSS.">
+    <meta name="author" content="Nurhuda Zubir">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nurhuda Zubir | Front-end Developer">
+    <meta property="og:description" content="Clean, responsive web interfaces built with Vue.js and Tailwind CSS.">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Nurhuda Zubir | Front-end Developer">
+    <meta name="twitter:description" content="Clean, responsive web interfaces built with Vue.js and Tailwind CSS.">
+
+    <!-- Apply saved theme before first paint to avoid a light flash in dark mode -->
+    <script>
+      (function () {
+        var dark = false
+        try {
+          var saved = localStorage.getItem('theme')
+          dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+        } catch (e) {}
+        if (dark) document.documentElement.classList.add('dark')
+      })()
+    </script>
   </head>
   <body>
     <div id="app"></div>

@@ -13,3 +13,27 @@ body {
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out;
   }
+
+/* Scroll reveal (see src/directives/reveal.js) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Typing cursor in Hero */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.typing-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .typing-cursor, .animate-fade-in { animation: none; }
+}
