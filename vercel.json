@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/invitation-huda",
+      "destination": "https://walimatulurus.hudazubir.com/",
+      "permanent": false
+    },
+    {
+      "source": "/invitation-huda/",
+      "destination": "https://walimatulurus.hudazubir.com/",
+      "permanent": false
+    }
+  ]
+}
